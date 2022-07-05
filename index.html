@@ -94,9 +94,9 @@ Night (11pm to 5am)
 
 	if(myHour >5 && myHour < 12){//morning
     //  alert("good morning!");
-	 myGreeting = "Good Morning Vietnam";
+	 myGreeting = "Good Morning";
 	 myColor = "orange";
-	 MyPic = "morning.jpg";
+	 myPic = "morning.jpg";
 	}else if (myHour >12 && myHour <18){//afternoon
     //  alert("good afternoon!");
 	myGreeting = "Not the morning anymore my g";
@@ -116,13 +116,14 @@ Night (11pm to 5am)
 
   }
 
+  	myPic = "images/" + myPic;
 
-
+  alert(myPic);
 	document.getElementById("copyright") .innerHTML = myCopyright;
 	document.getElementById("greeting") .innerHTML = myGreeting;
 	document.querySelector("html").style.backgroundColor = myColor;
 	document.getElementById("pic").src = myPic;
-	myPic = "images/" + myPic;
+	
 
 
 
